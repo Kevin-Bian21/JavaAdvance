@@ -18,6 +18,10 @@ public class Test {
         Integer f = 128;
         System.out.println(e==f);  //false
 
+        Integer g = -128;
+        Integer h = -128;
+        System.out.println(g==h);  //true
+
         System.out.println(""+a+b);
         System.out.println(a+b+"");
     }
