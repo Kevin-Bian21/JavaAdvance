@@ -1,5 +1,8 @@
 package Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author BianWenKai
  * @DATE 2021/10/18 - 21:49
@@ -24,5 +27,8 @@ public class Test {
 
         System.out.println(""+a+b);
         System.out.println(a+b+"");
+        Object o = new Object();
+        Test test = new Test();
+
     }
 }

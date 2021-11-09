@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: Practice.Types
+Thread.Main-Class: NowCode.Practice.Types
 
