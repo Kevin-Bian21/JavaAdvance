@@ -16,19 +16,15 @@ public class Map {
     public static void main(String[] args) {
         List<Person> persons = new ArrayList<>(Arrays.asList(new Person("Jone",18),new Person("Bob",22)));
 
-        //打印所有人的姓名
+        //将person对象映射为person对象的姓名
         persons.stream()
-                .map(new Function<Person, String>() {
-                    @Override
-                    public String apply(Person person) {
-                        return person.getName();
-                    }
-                })
-                .forEach(new Consumer<String>() {
-                    @Override
-                    public void accept(String s) {
-                        System.out.println(s);
-                    }
-                });
+                .map(Person::getName)
+                .forEach(System.out::println);
+
+
+        persons.stream()
+                .map(Person::getAge)
+                .map(age -> age + 10)
+                .forEach(System.out::println);
     }
 }
