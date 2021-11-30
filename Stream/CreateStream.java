@@ -1,6 +1,7 @@
 package Stream;
 
 import java.util.*;
+import java.util.Map;
 import java.util.stream.Stream;
 
 /**
